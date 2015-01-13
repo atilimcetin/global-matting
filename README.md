@@ -1,0 +1,2 @@
+# global-matting
+global matting
