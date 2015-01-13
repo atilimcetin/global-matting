@@ -21,7 +21,7 @@ int main()
     cv::Mat image = cv::imread("GT04-image.png", CV_LOAD_IMAGE_COLOR);
     cv::Mat trimap = cv::imread("GT04-trimap.png", CV_LOAD_IMAGE_GRAYSCALE);
 
-    // (pptional) exploit the affinity of neighboring pixels to reduce the 
+    // (optional) exploit the affinity of neighboring pixels to reduce the 
     // size of the unknown region. please refer to the paper
     // 'Shared Sampling for Real-Time Alpha Matting'.
     expansionOfKnownRegions(image, trimap, 9);
