@@ -1,4 +1,4 @@
-# A Global Sampling Method for Alpha Matting
+# Global Matting
 
 This project is built by reproducing the global matting algorithm in the CVPR 2011 paper: 
 
@@ -7,7 +7,7 @@ He, Kaiming, et al. "A global sampling method for alpha matting." In CVPR’11, 
 
 ## Benchmark
 
-After evaluating the results on the [alpha matting evaluation website](http://alphamatting.com/), this implementation (with matting Laplacian as post-processing) ranks 5th in SAD and 6th in MSE (the original implementation ranks 10th in SAD and 9th in MSE). Running time is less than 1 seconds for an 800x600 image.  Hence this implementation is one of the highest ranked among the fast matting methods.
+After evaluating the results on the [alpha matting evaluation website](http://alphamatting.com/), this implementation (with matting Laplacian as post-processing) ranks 5th in SAD and 6th in MSE (the original implementation ranks 10th in SAD and 9th in MSE). Running time is less than 1 seconds for an 800x600 image.  Hence, this implementation is one of the highest ranked among the fast matting methods.
 
 
 ## Example
