@@ -1,13 +1,18 @@
 # A Global Sampling Method for Alpha Matting
 
-This is an implementation of trimap to alpha matting algorithm for OpenCV.
+This project is built by reproducing the global matting algorithm in the CVPR 2011 paper: 
+
+He, Kaiming, et al. "A global sampling method for alpha matting." In CVPR’11, pages 2049–2056, 2011.
+
 
 ## Benchmark
 
-When matting Laplacian as post-processing is used, this implementation ranks 5th in SAD and 6th in MSE (The original implementation ranks 10th in SAD and 9th in MSE). Running time is less than 1 seconds for an 800x600 image.
+After evaluating the results on the [alpha matting evaluation website](http://alphamatting.com/), this implementation (with matting Laplacian as post-processing) ranks 5th in SAD and 6th in MSE (the original implementation ranks 10th in SAD and 9th in MSE). Running time is less than 1 seconds for an 800x600 image.  Hence this implementation is one of the highest ranked among the fast matting methods.
 
 
 ## Example
+
+### Code
 
 ```c++
 #include "globalmatting.h"
@@ -45,6 +50,8 @@ int main()
     return 0;
 }
 ```
+
+### Result
 
 [![Image](http://atilimcetin.com/global-matting/GT04-image_small.png)](http://atilimcetin.com/global-matting/GT04-image.png)
 [![Trimap](http://atilimcetin.com/global-matting/GT04-trimap_small.png)](http://atilimcetin.com/global-matting/GT04-trimap.png)
